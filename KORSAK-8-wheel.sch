@@ -25,10 +25,10 @@ F 3 "~" H 6300 4110 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Motor:Motor_DC M2
+L Motor:Motor_DC M3
 U 1 1 5F9B5F4B
 P 6300 3550
-F 0 "M2" H 6458 3546 50  0000 L CNN
+F 0 "M3" H 6458 3546 50  0000 L CNN
 F 1 "Motor_DC" H 6458 3455 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 6300 3460 50  0001 C CNN
 F 3 "~" H 6300 3460 50  0001 C CNN
@@ -77,10 +77,10 @@ F 3 "~" H 2100 3460 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Motor:Motor_DC M3
+L Motor:Motor_DC M2
 U 1 1 6010707E
 P 2100 4200
-F 0 "M3" H 2258 4196 50  0000 L CNN
+F 0 "M2" H 2258 4196 50  0000 L CNN
 F 1 "Motor_DC" H 2258 4105 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 2100 4110 50  0001 C CNN
 F 3 "~" H 2100 4110 50  0001 C CNN
@@ -176,10 +176,10 @@ F 3 "~" H 6300 5710 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Motor:Motor_DC M6
+L Motor:Motor_DC M7
 U 1 1 601FA1A6
 P 6300 5150
-F 0 "M6" H 6458 5146 50  0000 L CNN
+F 0 "M7" H 6458 5146 50  0000 L CNN
 F 1 "Motor_DC" H 6458 5055 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 6300 5060 50  0001 C CNN
 F 3 "~" H 6300 5060 50  0001 C CNN
@@ -240,10 +240,10 @@ F 3 "~" H 2100 5060 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Motor:Motor_DC M7
+L Motor:Motor_DC M6
 U 1 1 601FA1F2
 P 2100 5800
-F 0 "M7" H 2258 5796 50  0000 L CNN
+F 0 "M6" H 2258 5796 50  0000 L CNN
 F 1 "Motor_DC" H 2258 5705 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 2100 5710 50  0001 C CNN
 F 3 "~" H 2100 5710 50  0001 C CNN

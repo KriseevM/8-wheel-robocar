@@ -4,12 +4,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
+Title "KORSAK Motor Driver board"
+Date "2020-12-24"
+Rev "3"
 Comp ""
 Comment1 ""
-Comment2 ""
+Comment2 "Kriseev Mikhail"
 Comment3 ""
 Comment4 ""
 $EndDescr

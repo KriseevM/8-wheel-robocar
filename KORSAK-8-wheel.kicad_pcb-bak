@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 18)
+    (drawings 16)
     (tracks 355)
     (zones 0)
     (modules 20)
@@ -1486,12 +1486,6 @@
     (arrow1b (pts (xy 210 29) (xy 208.873496 28.413579)))
     (arrow2a (pts (xy 40 29) (xy 41.126504 29.586421)))
     (arrow2b (pts (xy 40 29) (xy 41.126504 28.413579)))
-  )
-  (gr_text M (at 196.47 120.11) (layer F.SilkS)
-    (effects (font (size 5 5) (thickness 0.75) italic))
-  )
-  (gr_text K (at 191.39 117.57) (layer F.SilkS)
-    (effects (font (size 5 5) (thickness 0.75) italic))
   )
   (gr_text "EN(L)" (at 41.91 82.55 270) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))

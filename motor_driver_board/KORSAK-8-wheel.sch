@@ -16,27 +16,25 @@ $EndDescr
 $Comp
 L Motor:Motor_DC M4
 U 1 1 5F9B4D6F
-P 6300 4200
-F 0 "M4" H 6458 4196 50  0000 L CNN
-F 1 "Motor_DC" H 6458 4105 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 6300 4110 50  0001 C CNN
-F 3 "~" H 6300 4110 50  0001 C CNN
-	1    6300 4200
+P 6750 3850
+F 0 "M4" V 6550 3750 50  0000 L CNN
+F 1 "Motor_DC" V 6950 3600 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 6750 3760 50  0001 C CNN
+F 3 "~" H 6750 3760 50  0001 C CNN
+	1    6750 3850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Motor:Motor_DC M3
 U 1 1 5F9B5F4B
-P 6300 3550
-F 0 "M3" H 6458 3546 50  0000 L CNN
-F 1 "Motor_DC" H 6458 3455 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 6300 3460 50  0001 C CNN
-F 3 "~" H 6300 3460 50  0001 C CNN
-	1    6300 3550
+P 6750 3250
+F 0 "M3" V 6550 3150 50  0000 L CNN
+F 1 "Motor_DC" V 6950 3050 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 6750 3160 50  0001 C CNN
+F 3 "~" H 6750 3160 50  0001 C CNN
+	1    6750 3250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5850 3650 5950 3650
 Wire Wire Line
 	5850 3250 6050 3250
 $Comp
@@ -62,29 +60,27 @@ F 3 "http://www.ti.com/lit/ds/symlink/l293.pdf" H 2750 4350 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 3050 2300 3050
-Wire Wire Line
-	2550 3650 2450 3650
+	2550 3050 2050 3050
 $Comp
 L Motor:Motor_DC M1
 U 1 1 60107084
-P 2100 3550
-F 0 "M1" H 2258 3546 50  0000 L CNN
-F 1 "Motor_DC" H 2258 3455 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 2100 3460 50  0001 C CNN
-F 3 "~" H 2100 3460 50  0001 C CNN
-	1    2100 3550
+P 1650 3250
+F 0 "M1" H 1808 3246 50  0000 L CNN
+F 1 "Motor_DC" H 1808 3155 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 1650 3160 50  0001 C CNN
+F 3 "~" H 1650 3160 50  0001 C CNN
+	1    1650 3250
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Motor:Motor_DC M2
 U 1 1 6010707E
-P 2100 4200
-F 0 "M2" H 2258 4196 50  0000 L CNN
-F 1 "Motor_DC" H 2258 4105 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 2100 4110 50  0001 C CNN
-F 3 "~" H 2100 4110 50  0001 C CNN
-	1    2100 4200
+P 1650 3850
+F 0 "M2" H 1808 3846 50  0000 L CNN
+F 1 "Motor_DC" H 1808 3755 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 1650 3760 50  0001 C CNN
+F 3 "~" H 1650 3760 50  0001 C CNN
+	1    1650 3850
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -167,24 +163,14 @@ $EndComp
 $Comp
 L Motor:Motor_DC M7
 U 1 1 601FA1A6
-P 6300 5150
-F 0 "M7" H 6458 5146 50  0000 L CNN
-F 1 "Motor_DC" H 6458 5055 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 6300 5060 50  0001 C CNN
-F 3 "~" H 6300 5060 50  0001 C CNN
-	1    6300 5150
+P 6400 5300
+F 0 "M7" H 6100 5300 50  0000 L CNN
+F 1 "Motor_DC" H 5900 5200 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 6400 5210 50  0001 C CNN
+F 3 "~" H 6400 5210 50  0001 C CNN
+	1    6400 5300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6100 6100 6300 6100
-Wire Wire Line
-	6050 5600 6300 5600
-Wire Wire Line
-	5850 5600 5850 5450
-Wire Wire Line
-	5850 5800 5950 5800
-Wire Wire Line
-	5850 6400 6050 6400
 $Comp
 L power:+5V #PWR09
 U 1 1 601FA1C1
@@ -207,37 +193,16 @@ F 3 "http://www.ti.com/lit/ds/symlink/l293.pdf" H 2750 6500 50  0001 C CNN
 	1    3050 5800
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	2550 6400 2300 6400
-Wire Wire Line
-	2550 6200 2350 6200
-Wire Wire Line
-	2550 5800 2450 5800
-Wire Wire Line
-	2550 5600 2550 5450
-Wire Wire Line
-	2350 6200 2350 6100
 $Comp
 L Motor:Motor_DC M5
 U 1 1 601FA1E8
-P 2100 5150
-F 0 "M5" H 2258 5146 50  0000 L CNN
-F 1 "Motor_DC" H 2258 5055 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 2100 5060 50  0001 C CNN
-F 3 "~" H 2100 5060 50  0001 C CNN
-	1    2100 5150
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Motor:Motor_DC M6
-U 1 1 601FA1F2
-P 2100 5800
-F 0 "M6" H 2258 5796 50  0000 L CNN
-F 1 "Motor_DC" H 2258 5705 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 2100 5710 50  0001 C CNN
-F 3 "~" H 2100 5710 50  0001 C CNN
-	1    2100 5800
-	-1   0    0    -1  
+P 2000 5300
+F 0 "M5" H 2158 5296 50  0000 L CNN
+F 1 "Motor_DC" H 2158 5205 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 2000 5210 50  0001 C CNN
+F 3 "~" H 2000 5210 50  0001 C CNN
+	1    2000 5300
+	1    0    0    -1  
 $EndComp
 $Comp
 L Driver_Motor:L293D U2
@@ -373,18 +338,6 @@ Wire Wire Line
 Connection ~ 4550 4450
 Wire Wire Line
 	4550 4450 4550 5800
-Wire Wire Line
-	6100 6200 6100 6100
-Wire Wire Line
-	5850 6200 6100 6200
-Wire Wire Line
-	6050 5600 6050 6400
-Wire Wire Line
-	5950 4950 6300 4950
-Wire Wire Line
-	5950 4950 5950 5800
-Wire Wire Line
-	6300 5450 5850 5450
 $Comp
 L Connector:Screw_Terminal_01x06 J3
 U 1 1 5FDEC2FB
@@ -436,51 +389,89 @@ Connection ~ 3750 4650
 Wire Wire Line
 	3750 4650 3750 5400
 Wire Wire Line
-	6300 3050 6300 3350
+	5850 3050 6250 3050
 Wire Wire Line
-	5850 3050 6300 3050
+	6050 3550 6250 3550
 Wire Wire Line
-	6050 3850 6300 3850
+	6050 3250 6050 3550
 Wire Wire Line
-	6050 3250 6050 3850
+	5850 3850 6050 3850
 Wire Wire Line
-	5850 3850 5850 4500
-Wire Wire Line
-	5850 4500 6300 4500
-Wire Wire Line
-	5950 4000 6300 4000
-Wire Wire Line
-	5950 3650 5950 4000
+	6050 3850 6050 4150
 Wire Wire Line
 	2550 3250 2350 3250
 Wire Wire Line
-	2300 3050 2300 3350
+	2950 6800 2950 7050
 Wire Wire Line
-	2350 3250 2350 3850
+	2950 7050 7200 7050
 Wire Wire Line
-	2300 3350 2100 3350
+	5450 2650 5450 2550
 Wire Wire Line
-	2100 3850 2350 3850
+	5450 2550 7200 2550
 Wire Wire Line
-	2450 3650 2450 4000
+	7200 2550 7200 4450
+Connection ~ 7200 4450
 Wire Wire Line
-	2100 4000 2450 4000
+	7400 4650 7200 4650
 Wire Wire Line
-	2550 3850 2550 4500
+	7200 4650 7200 7050
+Connection ~ 7200 4650
+Connection ~ 7300 4550
 Wire Wire Line
-	2100 4500 2550 4500
+	1100 2550 2950 2550
 Wire Wire Line
-	2300 5600 2100 5600
+	2950 2550 2950 2650
 Wire Wire Line
-	2100 6100 2350 6100
+	5450 7150 5450 6800
+$Comp
+L power:PWR_FLAG #FLG06
+U 1 1 604E2E73
+P 950 4450
+F 0 "#FLG06" H 950 4525 50  0001 C CNN
+F 1 "PWR_FLAG" V 950 4750 50  0000 C CNN
+F 2 "" H 950 4450 50  0001 C CNN
+F 3 "~" H 950 4450 50  0001 C CNN
+	1    950  4450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG05
+U 1 1 604E2418
+P 1100 4650
+F 0 "#FLG05" H 1100 4725 50  0001 C CNN
+F 1 "PWR_FLAG" H 1350 4700 50  0000 C CNN
+F 2 "" H 1100 4650 50  0001 C CNN
+F 3 "~" H 1100 4650 50  0001 C CNN
+	1    1100 4650
+	0    1    1    0   
+$EndComp
 Wire Wire Line
-	2300 5600 2300 6400
+	1100 2550 1100 4650
 Wire Wire Line
-	2450 4950 2100 4950
+	1100 4650 900  4650
+Connection ~ 1100 4650
 Wire Wire Line
-	2100 5450 2550 5450
+	900  4450 950  4450
 Wire Wire Line
-	2450 4950 2450 5800
+	950  4450 950  7150
+Wire Wire Line
+	950  7150 5450 7150
+Connection ~ 950  4450
+$Comp
+L Motor:Motor_DC M6
+U 1 1 601FA1F2
+P 1700 6300
+F 0 "M6" H 1858 6296 50  0000 L CNN
+F 1 "Motor_DC" H 1858 6205 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 1700 6210 50  0001 C CNN
+F 3 "~" H 1700 6210 50  0001 C CNN
+	1    1700 6300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 6100 2350 6200
+Wire Wire Line
+	2350 6200 2550 6200
 Wire Wire Line
 	5150 5000 5250 5000
 Connection ~ 5250 5000
@@ -580,6 +571,14 @@ F 3 "" H 2950 6800 50  0001 C CNN
 	1    2950 6800
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	1950 5600 2000 5600
+Connection ~ 2000 5600
+Wire Wire Line
+	1650 5600 1600 5600
+Connection ~ 1600 5600
+Wire Wire Line
+	1600 5600 1600 5100
 $Comp
 L power:+BATT #PWR015
 U 1 1 604EF0A1

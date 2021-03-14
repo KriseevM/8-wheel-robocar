@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "KORSAK Motor Driver board"
 Date "2021-03-13"
-Rev "5"
+Rev "6"
 Comp ""
 Comment1 ""
 Comment2 "Kriseev Mikhail"
@@ -95,13 +95,13 @@ $EndComp
 $Comp
 L power:GND #PWR04
 U 1 1 5FFD08AA
-P 9750 4350
-F 0 "#PWR04" H 9750 4100 50  0001 C CNN
-F 1 "GND" H 9850 4200 50  0000 R CNN
-F 2 "" H 9750 4350 50  0001 C CNN
-F 3 "" H 9750 4350 50  0001 C CNN
-	1    9750 4350
-	-1   0    0    1   
+P 10200 4800
+F 0 "#PWR04" H 10200 4550 50  0001 C CNN
+F 1 "GND" V 10200 4650 50  0000 R CNN
+F 2 "" H 10200 4800 50  0001 C CNN
+F 3 "" H 10200 4800 50  0001 C CNN
+	1    10200 4800
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+5V #PWR05
@@ -206,12 +206,12 @@ $Comp
 L Connector:Conn_01x02_Male J2
 U 1 1 60435B47
 P 9950 4150
-F 0 "J2" V 9900 4250 50  0000 R CNN
-F 1 "Conn_01x02_Male" V 9900 4050 50  0000 R CNN
+F 0 "J2" V 9900 4150 50  0000 R CNN
+F 1 "5V connector" V 10000 4700 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 9950 4150 50  0001 C CNN
 F 3 "~" H 9950 4150 50  0001 C CNN
 	1    9950 4150
-	0    -1   1    0   
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	3100 2750 3300 2750
@@ -317,7 +317,7 @@ L Connector:Screw_Terminal_01x06 J3
 U 1 1 5FDEC2FB
 P 3800 4200
 F 0 "J3" V 3450 4100 50  0000 L CNN
-F 1 "Screw_Terminal_01x06" V 3950 3800 50  0000 L CNN
+F 1 "Logic" V 3900 4050 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-6_1x06_P5.00mm_Horizontal" H 3800 4200 50  0001 C CNN
 F 3 "~" H 3800 4200 50  0001 C CNN
 	1    3800 4200
@@ -505,7 +505,7 @@ L Connector:Screw_Terminal_01x06 J1
 U 1 1 604F4025
 P 9250 4150
 F 0 "J1" V 9350 4050 50  0000 L CNN
-F 1 "Screw_Terminal_01x06" V 9450 3700 50  0000 L CNN
+F 1 "Battery" V 9450 3950 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-6_1x06_P5.00mm_Horizontal" H 9250 4150 50  0001 C CNN
 F 3 "~" H 9250 4150 50  0001 C CNN
 	1    9250 4150
@@ -777,7 +777,7 @@ L power:PWR_FLAG #FLG0101
 U 1 1 60AD91B9
 P 9050 4350
 F 0 "#FLG0101" H 9050 4425 50  0001 C CNN
-F 1 "PWR_FLAG" H 9050 4523 50  0000 C CNN
+F 1 "PWR_FLAG" H 9300 4450 50  0000 C CNN
 F 2 "" H 9050 4350 50  0001 C CNN
 F 3 "~" H 9050 4350 50  0001 C CNN
 	1    9050 4350
@@ -794,18 +794,53 @@ F 3 "~" H 10050 4350 50  0001 C CNN
 	1    10050 4350
 	0    1    1    0   
 $EndComp
-Connection ~ 10050 4350
 $Comp
 L power:PWR_FLAG #FLG0103
 U 1 1 60AE12BA
-P 9750 4350
-F 0 "#FLG0103" H 9750 4425 50  0001 C CNN
-F 1 "PWR_FLAG" H 9750 4523 50  0000 C CNN
-F 2 "" H 9750 4350 50  0001 C CNN
-F 3 "~" H 9750 4350 50  0001 C CNN
-	1    9750 4350
-	-1   0    0    1   
+P 10200 4800
+F 0 "#FLG0103" H 10200 4875 50  0001 C CNN
+F 1 "PWR_FLAG" H 10350 4950 50  0000 C CNN
+F 2 "" H 10200 4800 50  0001 C CNN
+F 3 "~" H 10200 4800 50  0001 C CNN
+	1    10200 4800
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9750 4350 9950 4350
+	9750 4350 9850 4350
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 604F19B3
+P 10000 4800
+F 0 "SW1" H 10000 4900 50  0000 C CNN
+F 1 "SW_SPST" H 10000 4700 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 10000 4800 50  0001 C CNN
+F 3 "~" H 10000 4800 50  0001 C CNN
+	1    10000 4800
+	1    0    0    -1  
+$EndComp
+Connection ~ 9250 4350
+Connection ~ 10200 4800
+Wire Wire Line
+	9750 4350 9750 4800
+Wire Wire Line
+	9750 4800 9800 4800
+$Comp
+L Connector:Screw_Terminal_01x02 J4
+U 1 1 6053A604
+P 9350 4550
+F 0 "J4" V 9350 4300 50  0000 L CNN
+F 1 "Charge Indicator" V 9450 4200 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 9350 4550 50  0001 C CNN
+F 3 "~" H 9350 4550 50  0001 C CNN
+	1    9350 4550
+	0    1    1    0   
+$EndComp
+Connection ~ 9350 4350
+Text Notes 9350 4500 0    50   ~ 0
+-
+Text Notes 9150 4500 0    50   ~ 0
++
+Wire Wire Line
+	9950 4350 10050 4350
+Connection ~ 10050 4350
 $EndSCHEMATC

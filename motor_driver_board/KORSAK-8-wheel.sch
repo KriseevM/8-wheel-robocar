@@ -60,23 +60,23 @@ $EndComp
 $Comp
 L Motor:Motor_DC M8
 U 1 1 601FA19C
-P 5550 4900
-F 0 "M8" V 5350 4800 50  0000 L CNN
-F 1 "Motor_DC" V 5750 4700 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 5550 4810 50  0001 C CNN
-F 3 "~" H 5550 4810 50  0001 C CNN
-	1    5550 4900
+P 5550 5500
+F 0 "M8" V 5350 5400 50  0000 L CNN
+F 1 "Motor_DC" V 5750 5300 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 5550 5410 50  0001 C CNN
+F 3 "~" H 5550 5410 50  0001 C CNN
+	1    5550 5500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Motor:Motor_DC M7
 U 1 1 601FA1A6
-P 5550 5500
-F 0 "M7" V 5350 5400 50  0000 L CNN
-F 1 "Motor_DC" V 5750 5300 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 5550 5410 50  0001 C CNN
-F 3 "~" H 5550 5410 50  0001 C CNN
-	1    5550 5500
+P 5550 4900
+F 0 "M7" V 5350 4800 50  0000 L CNN
+F 1 "Motor_DC" V 5750 4700 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 5550 4810 50  0001 C CNN
+F 3 "~" H 5550 4810 50  0001 C CNN
+	1    5550 4900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -91,26 +91,15 @@ F 3 "" H 4000 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Driver_Motor:L293D U2
+L Driver_Motor:L293D U4
 U 1 1 601FA21D
 P 4100 5300
-F 0 "U2" H 4250 5600 50  0000 C CNN
+F 0 "U4" H 4250 5600 50  0000 C CNN
 F 1 "L293D" H 4250 5450 50  0000 C CNN
 F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 4350 4550 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/l293.pdf" H 3800 6000 50  0001 C CNN
 	1    4100 5300
 	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Male J2
-U 1 1 60435B47
-P 9950 4150
-F 0 "J2" V 9900 4150 50  0000 R CNN
-F 1 "5V connector" V 10000 4700 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 9950 4150 50  0001 C CNN
-F 3 "~" H 9950 4150 50  0001 C CNN
-	1    9950 4150
-	0    1    1    0   
 $EndComp
 Wire Wire Line
 	3900 6100 4000 6100
@@ -211,23 +200,23 @@ $EndComp
 $Comp
 L Device:C C7
 U 1 1 60A139F7
-P 5000 5550
-F 0 "C7" H 5115 5596 50  0000 L CNN
-F 1 "10pF" H 5115 5505 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 5038 5400 50  0001 C CNN
-F 3 "~" H 5000 5550 50  0001 C CNN
-	1    5000 5550
+P 5000 4950
+F 0 "C7" H 5115 4996 50  0000 L CNN
+F 1 "10pF" H 5115 4905 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 5038 4800 50  0001 C CNN
+F 3 "~" H 5000 4950 50  0001 C CNN
+	1    5000 4950
 	1    0    0    1   
 $EndComp
 $Comp
 L Device:C C8
 U 1 1 60A183A3
-P 5000 4950
-F 0 "C8" H 5115 4996 50  0000 L CNN
-F 1 "10pF" H 5115 4905 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 5038 4800 50  0001 C CNN
-F 3 "~" H 5000 4950 50  0001 C CNN
-	1    5000 4950
+P 5000 5550
+F 0 "C8" H 5115 5596 50  0000 L CNN
+F 1 "10pF" H 5115 5505 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 5038 5400 50  0001 C CNN
+F 3 "~" H 5000 5550 50  0001 C CNN
+	1    5000 5550
 	1    0    0    1   
 $EndComp
 Wire Wire Line
@@ -243,7 +232,6 @@ Wire Wire Line
 Wire Wire Line
 	4600 4900 4800 4900
 Connection ~ 9550 4350
-Connection ~ 9850 4350
 Wire Wire Line
 	9850 4350 9550 4350
 $Comp
@@ -377,8 +365,6 @@ Wire Wire Line
 Wire Wire Line
 	1550 5300 1000 5300
 Connection ~ 1550 5300
-Wire Wire Line
-	1550 5400 1550 5300
 $Comp
 L Device:C C1
 U 1 1 60A3187A
@@ -402,25 +388,25 @@ F 3 "~" H 1550 3200 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:C C3
+L Device:C C5
 U 1 1 60A267CC
-P 1550 5550
-F 0 "C3" H 1665 5596 50  0000 L CNN
-F 1 "10pF" H 1665 5505 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 1588 5400 50  0001 C CNN
-F 3 "~" H 1550 5550 50  0001 C CNN
-	1    1550 5550
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C C4
-U 1 1 60A1E5A3
 P 1550 4950
-F 0 "C4" H 1665 4996 50  0000 L CNN
+F 0 "C5" H 1665 4996 50  0000 L CNN
 F 1 "10pF" H 1665 4905 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 1588 4800 50  0001 C CNN
 F 3 "~" H 1550 4950 50  0001 C CNN
 	1    1550 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 60A1E5A3
+P 1550 5550
+F 0 "C6" H 1665 5596 50  0000 L CNN
+F 1 "10pF" H 1665 5505 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 1588 5400 50  0001 C CNN
+F 3 "~" H 1550 5550 50  0001 C CNN
+	1    1550 5550
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -501,12 +487,12 @@ $EndComp
 $Comp
 L Motor:Motor_DC M6
 U 1 1 601FA1F2
-P 1000 4900
-F 0 "M6" V 1200 4800 50  0000 L CNN
-F 1 "Motor_DC" V 800 4700 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 1000 4810 50  0001 C CNN
-F 3 "~" H 1000 4810 50  0001 C CNN
-	1    1000 4900
+P 1000 5500
+F 0 "M6" V 1200 5400 50  0000 L CNN
+F 1 "Motor_DC" V 800 5300 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 1000 5410 50  0001 C CNN
+F 3 "~" H 1000 5410 50  0001 C CNN
+	1    1000 5500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -523,12 +509,12 @@ $EndComp
 $Comp
 L Motor:Motor_DC M5
 U 1 1 601FA1E8
-P 1000 5500
-F 0 "M5" V 800 5400 50  0000 L CNN
-F 1 "Motor_DC" V 1200 5300 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 1000 5410 50  0001 C CNN
-F 3 "~" H 1000 5410 50  0001 C CNN
-	1    1000 5500
+P 1000 4900
+F 0 "M5" V 800 4800 50  0000 L CNN
+F 1 "Motor_DC" V 1200 4700 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 1000 4810 50  0001 C CNN
+F 3 "~" H 1000 4810 50  0001 C CNN
+	1    1000 4900
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -607,13 +593,13 @@ Wire Wire Line
 	2950 5100 3600 5100
 Wire Wire Line
 	2950 5700 3600 5700
-Text Label 3150 5300 0    50   ~ 0
+Text Label 3150 5500 0    50   ~ 0
 L_IN_1
 Text Label 3150 4700 0    50   ~ 0
 L_IN_1
 Text Label 3150 4900 0    50   ~ 0
 L_IN_2
-Text Label 3150 5500 0    50   ~ 0
+Text Label 3150 5300 0    50   ~ 0
 L_IN_2
 Text Label 3150 5700 0    50   ~ 0
 L_EN
@@ -625,11 +611,11 @@ Text Label 3150 2750 0    50   ~ 0
 R_EN
 Text Label 3150 2350 0    50   ~ 0
 R_IN_1
-Text Label 3150 2950 0    50   ~ 0
+Text Label 3150 3150 0    50   ~ 0
 R_IN_1
 Text Label 3150 2550 0    50   ~ 0
 R_IN_2
-Text Label 3150 3150 0    50   ~ 0
+Text Label 3150 2950 0    50   ~ 0
 R_IN_2
 $Comp
 L 74xx:74LS04 U5
@@ -661,10 +647,10 @@ Connection ~ 5000 2950
 Wire Wire Line
 	5000 2950 5000 3050
 $Comp
-L Device:C C6
+L Device:C C4
 U 1 1 60A02B64
 P 5000 3200
-F 0 "C6" H 5115 3246 50  0000 L CNN
+F 0 "C4" H 5115 3246 50  0000 L CNN
 F 1 "10pF" H 5115 3155 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 5038 3050 50  0001 C CNN
 F 3 "~" H 5000 3200 50  0001 C CNN
@@ -682,10 +668,10 @@ Connection ~ 5000 2850
 Wire Wire Line
 	5000 2750 5000 2850
 $Comp
-L Device:C C5
+L Device:C C3
 U 1 1 609F73D7
 P 5000 2600
-F 0 "C5" H 5115 2646 50  0000 L CNN
+F 0 "C3" H 5115 2646 50  0000 L CNN
 F 1 "10pF" H 5115 2555 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 5038 2450 50  0001 C CNN
 F 3 "~" H 5000 2600 50  0001 C CNN
@@ -729,10 +715,10 @@ Wire Wire Line
 Wire Wire Line
 	4800 2550 4800 2850
 $Comp
-L Driver_Motor:L293D U4
+L Driver_Motor:L293D U2
 U 1 1 5F9AC5A8
 P 4050 2950
-F 0 "U4" H 4200 3250 50  0000 C CNN
+F 0 "U2" H 4200 3250 50  0000 C CNN
 F 1 "L293D" H 4200 3100 50  0000 C CNN
 F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 4300 2200 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/l293.pdf" H 3750 3650 50  0001 C CNN
@@ -824,10 +810,10 @@ R_IN_1
 Text Label 9550 4350 0    50   ~ 0
 -BATT
 $Comp
-L Connector:Screw_Terminal_01x02 J?
+L Connector:Screw_Terminal_01x02 J5
 U 1 1 609ED073
 P 10050 5150
-F 0 "J?" V 10150 5050 50  0000 L CNN
+F 0 "J5" V 10150 5050 50  0000 L CNN
 F 1 "Charge Indicator" V 10250 4800 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 10050 5150 50  0001 C CNN
 F 3 "~" H 10050 5150 50  0001 C CNN
@@ -857,4 +843,51 @@ Text Notes 9150 5100 0    50   ~ 0
 +
 Text Notes 9400 5100 0    50   ~ 0
 -
+Wire Wire Line
+	1550 5300 1550 5400
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 60B0E0CC
+P 9850 4150
+F 0 "J2" V 9814 3962 50  0000 R CNN
+F 1 "5V Power" V 9950 4250 50  0000 R CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 9850 4150 50  0001 C CNN
+F 3 "~" H 9850 4150 50  0001 C CNN
+	1    9850 4150
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9850 4350
+$Comp
+L 74xx:74LS04 U5
+U 7 1 60B55850
+P 7400 4700
+F 0 "U5" V 7033 4700 50  0000 C CNN
+F 1 "74LS04" V 7124 4700 50  0000 C CNN
+F 2 "" H 7400 4700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 7400 4700 50  0001 C CNN
+	7    7400 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60B5896B
+P 7900 4700
+F 0 "#PWR?" H 7900 4550 50  0001 C CNN
+F 1 "+5V" V 7915 4828 50  0000 L CNN
+F 2 "" H 7900 4700 50  0001 C CNN
+F 3 "" H 7900 4700 50  0001 C CNN
+	1    7900 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60B59733
+P 6900 4700
+F 0 "#PWR?" H 6900 4450 50  0001 C CNN
+F 1 "GND" V 6905 4572 50  0000 R CNN
+F 2 "" H 6900 4700 50  0001 C CNN
+F 3 "" H 6900 4700 50  0001 C CNN
+	1    6900 4700
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 28)
+    (drawings 27)
     (tracks 277)
     (zones 0)
     (modules 27)
@@ -1785,9 +1785,6 @@
     )
   )
 
-  (gr_text KM (at 176.53 115.57) (layer F.SilkS)
-    (effects (font (size 1.5 1.5) (thickness 0.3)))
-  )
   (gr_text Control (at 160 102) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
